@@ -5,16 +5,16 @@ class student
 {
     private:
     char name[20];
-    int roll;
+    int roll,i;
     int marks[6];
 
     public :
     void input(){
-        cout << "Enter student name";
+        cout << "Enter student name: ";
         cin >> name; 
         cout << "Enter Roll No.";
         cin >> roll;
-        cout << "cout enter marks of 6 subjects";
+        cout << "cout enter marks of 6 subjects\n";
         for ( i = 0; i < 6; i++)
         {
             cin >> marks[i];
@@ -25,7 +25,7 @@ class student
   
     void output()
     {
-        int i;
+        
         float average;
         cout << "Name: " << name << endl;
         cout << "Roll No.: " << roll << endl;
@@ -34,9 +34,9 @@ class student
             cout << marks[i] << "\t";
         }
 
-        average = avg();
+        average = avg(*this);
 
-        cout << avg;
+        cout << "The average of marks is: " << average;
     }
 
 
@@ -46,11 +46,7 @@ float avg(student& obj)
 {
     int i, sum = 0;
     float avg;
-    for(i = 0; i < 6; i++)
-    {
-        cin >> obj.marks[i]; 
-    } 
-
+  
     for (i = 0; i < 6; i++)
     {
         sum = sum + obj.marks[i];
@@ -59,5 +55,14 @@ float avg(student& obj)
     avg = sum/6;
 
    return avg;
-}
+};
 
+int main()
+{
+    student s;
+    s.input();
+    
+    s.output();
+
+    
+}
