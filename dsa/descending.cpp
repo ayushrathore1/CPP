@@ -19,9 +19,9 @@ int main()
     {
         printf("%d\t",arr[i]);
     }
-    for(i = 0; i < n; i++)
+    for(p = 0; p < n; p++)
     {
-        for(p = 0; p <= n; p++)
+        for(i = 0; i < n - 1- p; i++)
     {
         if(arr[i+1] > arr[i])
         {
