@@ -22,10 +22,6 @@ int main()
 
     display();
 
-
-
-
-
 }
 
 void push(int ITEM)
@@ -52,7 +48,7 @@ void pop()
     {
         int item = STACK[TOP];
         TOP = TOP - 1;
-        printf("%d ITEM is popped out\n",item);
+        printf("ITEM %d  is popped out\n",item);
     }
 }
 
