@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i, p, n, arr[100], temp;
+    int i, j, n, arr[100], temp;
 
     printf("How many numbers do you want to input ? \n");
     scanf("%d", &n);
@@ -19,9 +19,9 @@ int main()
     {
         printf("%d\t",arr[i]);
     }
-    for(p = 0; p < n; p++)
+    for(j = 0; j < n; j++)
     {
-        for(i = 0; i < n - 1- p; i++)
+        for(i = 0; i < n - 1- j; i++)
     {
         if(arr[i+1] > arr[i])
         {
