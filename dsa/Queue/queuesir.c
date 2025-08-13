@@ -30,7 +30,7 @@ int dequeue()
     {
         printf("UNDERFLOW\n");
         return -1;
-    }
+    }   
     else
     {
         return QUEUE[FRONT++];
