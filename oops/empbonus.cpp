@@ -32,7 +32,7 @@ void bonus(employee& obj)
         cout << "Id: " << obj.id << endl;
         cout << "Salary: " << obj.salary << endl;
         cout << "Performance Rating: " << obj.rating << endl;
-    if(obj.rating > 4.5)
+    if(obj.rating >= 4.5)
     {
         cout << obj.name <<" will get 20% of salary " << (obj.salary) * 0.2 << " as bonus";
     
